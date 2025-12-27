@@ -9,7 +9,8 @@ export default function Home() {
       justifyContent: 'center',
       minHeight: '100vh',
       gap: '2rem',
-      padding: '1rem'
+      padding: '1rem',
+      backgroundColor: '#f0f0f0'
     }}>
       <div style={{
         position: 'relative',
@@ -18,7 +19,7 @@ export default function Home() {
       }}>
         <img
           src="/logo.svg"
-          alt="Z.ai Logo"
+          alt="PT KEEN EYE Logo"
           style={{
             width: '100%',
             height: '100%',
@@ -26,6 +27,19 @@ export default function Home() {
           }}
         />
       </div>
+      <h1 style={{
+        fontSize: '2rem',
+        fontWeight: 'bold',
+        color: '#333'
+      }}>
+        PT KEEN EYE
+      </h1>
+      <p style={{
+        fontSize: '1rem',
+        color: '#666'
+      }}>
+        Website sedang dalam pengembangan
+      </p>
     </div>
   )
 }
