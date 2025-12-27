@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat & Ketentuan - PT KEEN EYE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #ec4899;
+            --accent-color: #f59e0b;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.9), rgba(99, 102, 241, 0.9)), url('https://ik.imagekit.io/xcl991/BG-Creative-1');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .creative-element {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .element-1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            top: -150px;
+            right: -100px;
+        }
+        
+        .element-2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            bottom: -100px;
+            left: -50px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold gradient-text">PT KEEN EYE</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-indigo-600">Beranda</a>
+                    <a href="index.html#services" class="nav-link text-gray-700 hover:text-indigo-600">Layanan</a>
+                    <a href="index.html#about" class="nav-link text-gray-700 hover:text-indigo-600">Tentang Kami</a>
+                    <a href="index.html#portfolio" class="nav-link text-gray-700 hover:text-indigo-600">Portfolio</a>
+                    <a href="index.html#contact" class="nav-link text-gray-700 hover:text-indigo-600">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Beranda</a>
+                <a href="index.html#services" class="block py-2 text-gray-700 hover:text-indigo-600">Layanan</a>
+                <a href="index.html#about" class="block py-2 text-gray-700 hover:text-indigo-600">Tentang Kami</a>
+                <a href="index.html#portfolio" class="block py-2 text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-indigo-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[40vh] flex items-center justify-center text-white relative">
+        <div class="creative-element element-1"></div>
+        <div class="creative-element element-2"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Syarat & Ketentuan</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Ketentuan penggunaan layanan PT KEEN EYE untuk solusi Meta Ads dan periklanan digital
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="content-section max-w-4xl mx-auto p-8 md:p-12">
+                <div class="mb-8">
+                    <p class="text-gray-600 text-sm">Terakhir diperbarui: 15 November 2023</p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Penerimaan Syarat -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">1. Penerimaan Syarat</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Dengan mengakses dan menggunakan layanan PT KEEN EYE, termasuk namun tidak terbatas pada layanan Meta Ads, Creative Content, Social Media Management, dan solusi periklanan digital lainnya, Anda ("Klien") setuju untuk terikat oleh Syarat & Ketentuan ini. Jika Anda tidak setuju dengan syarat-syarat ini, harap jangan menggunakan layanan kami.
+                        </p>
+                    </div>
+
+                    <!-- Definisi -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">2. Definisi</h2>
+                        <div class="space-y-3">
+                            <div class="highlight-box">
+                                <p class="text-gray-700"><strong>"PT KEEN EYE"</strong> adalah perusahaan penyedia layanan periklanan digital dan solusi Meta Ads.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <p class="text-gray-700"><strong>"Layanan"</strong> mencakup semua layanan yang disediakan oleh PT KEEN EYE, termasuk Meta Ads Campaign, Creative Content, Performance Analytics, Social Media Management, dan layanan terkait.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <p class="text-gray-700"><strong>"Klien"</strong> adalah individu atau perusahaan yang menggunakan layanan PT KEEN EYE.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <p class="text-gray-700"><strong>"Konten"</strong> adalah semua materi yang dibuat atau disediakan oleh PT KEEN EYE untuk Klien, termasuk desain, teks, gambar, dan video.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layanan yang Ditawarkan -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">3. Layanan yang Ditawarkan</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            PT KEEN EYE menyediakan layanan-layanan berikut:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li><strong>Meta Ads Campaign:</strong> Perencanaan, pembuatan, dan pengelolaan kampanye iklan di platform Meta (Facebook, Instagram, WhatsApp, Messenger)</li>
+                            <li><strong>Creative Content:</strong> Pembuatan konten visual dan teks untuk keperluan periklanan</li>
+                            <li><strong>Performance Analytics:</strong> Analisis dan pelaporan performa kampanye iklan</li>
+                            <li><strong>Social Media Management:</strong> Pengelolaan akun media sosial untuk keperluan bisnis</li>
+                            <li><strong>Audience Targeting:</strong> Segmentasi dan targeting audiens yang tepat sasaran</li>
+                            <li><strong>Hotel Branding:</strong> Strategi branding khusus untuk industri perhotelan</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kewajiban Klien -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">4. Kewajiban Klien</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Sebagai Klien, Anda setuju untuk:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Memberikan informasi yang akurat dan lengkap untuk keperluan kampanye iklan</li>
+                            <li>Memastikan produk atau layanan yang diiklankan memenuhi standar kualitas yang ditetapkan</li>
+                            <li>Menyediakan materi pendukung yang diperlukan untuk pembuatan konten</li>
+                            <li>Memberikan persetujuan untuk konten yang akan dipublikasikan dalam waktu yang wajar</li>
+                            <li>Membayar biaya layanan sesuai dengan faktur yang diterbitkan</li>
+                            <li>Mematuhi kebijakan platform Meta dan peraturan periklanan yang berlaku</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pembayaran -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">5. Pembayaran</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">5.1 Struktur Biaya</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Biaya layanan PT KEEN EYE terdiri dari:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1 mt-2">
+                                    <li>Biaya setup dan konsultasi (one-time)</li>
+                                    <li>Biaya manajemen kampanye (bulanan)</li>
+                                    <li>Budget iklan (ditentukan oleh Klien)</li>
+                                    <li>Biaya tambahan untuk layanan ekstra (jika ada)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">5.2 Metode Pembayaran</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Pembayaran dapat dilakukan melalui transfer bank, kartu kredit, atau metode lain yang disepakati bersama. Pembayaran harus dilakukan sesuai dengan tanggal jatuh tempo yang tertera pada faktur.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">5.3 Keterlambatan Pembayaran</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Keterlambatan pembayaran dapat mengakibatkan penghentian sementara layanan hingga pembayaran dilunasi. Bunga keterlambatan sebesar 2% per bulan akan dikenakan untuk pembayaran yang terlambat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kebijakan Pengembalian Dana -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">6. Kebijakan Pengembalian Dana</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Pengembalian dana dapat dipertimbangkan dalam kondisi berikut:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Layanan tidak dapat disediakan karena kesalahan PT KEEN EYE</li>
+                            <li>Adanya pembatalan layanan dengan pemberitahuan minimal 14 hari sebelum tanggal mulai</li>
+                            <li>Adanya alasan teknis yang membuat layanan tidak dapat dilaksanakan</li>
+                        </ul>
+                        <p class="text-gray-600 leading-relaxed">
+                            Budget iklan yang telah digunakan tidak dapat dikembalikan. Biaya setup dan konsultasi yang telah dilakukan tidak dapat dikembalikan.
+                        </p>
+                    </div>
+
+                    <!-- Hak Kekayaan Intelektual -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">7. Hak Kekayaan Intelektual</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">7.1 Konten yang Dibuat PT KEEN EYE</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Konten yang dibuat oleh PT KEEN EYE menjadi milik Klien setelah pembayaran penuh dilakukan. PT KEEN EYE berhak menggunakan konten tersebut untuk tujuan portfolio dan promosi dengan menyembunyikan informasi rahasia Klien.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">7.2 Materi Klien</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Klien menjamin memiliki hak atau izin untuk menggunakan semua materi yang disediakan kepada PT KEEN EYE dan bertanggung jawab atas pelanggaran hak kekayaan intelektual pihak ketiga.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Konfidensialitas -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">8. Konfidensialitas</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            PT KEEN EYE setuju untuk menjaga kerahasiaan semua informasi bisnis Klien dan tidak akan membagikannya kepada pihak ketiga tanpa persetujuan tertulis dari Klien, kecuali jika diwajibkan oleh hukum. Kewajiban ini tetap berlaku setelah hubungan bisnis berakhir.
+                        </p>
+                    </div>
+
+                    <!-- Jaminan dan Disclaimer -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">9. Jaminan dan Disclaimer</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">9.1 Jaminan PT KEEN EYE</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    PT KEEN EYE berjanji akan memberikan layanan dengan standar profesional yang tinggi dan melakukan upaya terbaik untuk mencapai tujuan kampanye yang disepakati.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">9.2 Hasil Tidak Dijamin</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    PT KEEN EYE tidak menjamin hasil spesifik dari kampanye iklan, karena hasil dapat dipengaruhi oleh berbagai faktor eksternal termasuk perubahan algoritma platform, persaingan, dan perilaku pasar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pembatasan Tanggung Jawab -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">10. Pembatasan Tanggung Jawab</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tanggung jawab PT KEEN EYE terhadap klaim apa pun yang timbul dari atau terkait dengan layanan tidak akan melebihi jumlah total biaya yang dibayarkan oleh Klien kepada PT KEEN EYE dalam enam bulan sebelum klaim dibuat. PT KEEN EYE tidak bertanggung jawab atas kerugian tidak langsung, insidental, atau konsekuensial.
+                        </p>
+                    </div>
+
+                    <!-- Terminasi -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">11. Terminasi</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">11.1 Terminasi oleh Klien</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Klien dapat mengakhiri layanan dengan pemberitahuan tertulis minimal 30 hari sebelum tanggal terminasi yang diinginkan. Biaya yang telah dibayar tidak dapat dikembalikan.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">11.2 Terminasi oleh PT KEEN EYE</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    PT KEEN EYE dapat mengakhiri layanan jika Klien melanggar syarat dan ketentuan, tidak melakukan pembayaran, atau terlibat dalam aktivitas ilegal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Perubahan Syarat -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">12. Perubahan Syarat & Ketentuan</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            PT KEEN EYE berhak mengubah Syarat & Ketentuan ini dari waktu ke waktu. Perubahan akan diinformasikan melalui website atau email. Penggunaan layanan setelah perubahan dianggap sebagai penerimaan terhadap syarat yang baru.
+                        </p>
+                    </div>
+
+                    <!-- Hukum yang Berlaku -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">13. Hukum yang Berlaku</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Syarat & Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa yang timbul dari atau terkait dengan syarat dan ketentuan ini akan diselesaikan melalui negosiasi atau mediasi, dan jika tidak dapat diselesaikan, akan diajukan ke pengadilan yang berwenang di Indonesia.
+                        </p>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">14. Hubungi Kami</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Jika Anda memiliki pertanyaan tentang Syarat & Ketentuan ini, silakan hubungi kami:
+                        </p>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-gray-700">PT KEEN EYE</h4>
+                                <p class="text-gray-600">DUSUN KUTA, DESA KUTA, PUJUT, LOMBOK TENGAH, NUSA TENGGARA BARAT</p>
+                                <p class="text-gray-600">Desa/Kelurahan Kuta, Kec. Pujut, Kab. Lombok Tengah, Provinsi Nusa Tenggara Barat</p>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-gray-600"><strong>Email:</strong> legal@ptkeeneye.com</p>
+                                <p class="text-gray-600"><strong>Telepon:</strong> 082382466172</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Disclaimer Akhir -->
+                    <div class="bg-gradient-to-r from-indigo-50 to-pink-50 border-l-4 border-indigo-500 p-6 rounded-lg">
+                        <p class="text-gray-700 font-semibold mb-2">Pernyataan Akhir</p>
+                        <p class="text-gray-600">
+                            Dengan menggunakan layanan PT KEEN EYE, Anda menyatakan telah membaca, memahami, dan menyetujui untuk terikat oleh Syarat & Ketentuan ini. Jika Anda tidak setuju dengan bagian mana pun dari syarat ini, harap jangan menggunakan layanan kami.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">PT KEEN EYE</h3>
+                    <p class="text-gray-400 mb-4">
+                        Solusi periklanan Meta yang kreatif dan efektif untuk industri perhotelan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Meta Ads Campaign</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Creative Content</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Performance Analytics</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Social Media Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="index.html#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tim Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Karir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kebijakan Cookie</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2023 PT KEEN EYE. Hak Cipta Dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

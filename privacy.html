@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - PT KEEN EYE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #ec4899;
+            --accent-color: #f59e0b;
+            --dark-color: #1f2937;
+            --light-color: #f9fafb;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(236, 72, 153, 0.9)), url('https://ik.imagekit.io/xcl991/BG-Creative-2');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-gradient {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .content-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .creative-element {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .element-1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            top: -150px;
+            right: -100px;
+        }
+        
+        .element-2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            bottom: -100px;
+            left: -50px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold gradient-text">PT KEEN EYE</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-indigo-600">Beranda</a>
+                    <a href="index.html#services" class="nav-link text-gray-700 hover:text-indigo-600">Layanan</a>
+                    <a href="index.html#about" class="nav-link text-gray-700 hover:text-indigo-600">Tentang Kami</a>
+                    <a href="index.html#portfolio" class="nav-link text-gray-700 hover:text-indigo-600">Portfolio</a>
+                    <a href="index.html#contact" class="nav-link text-gray-700 hover:text-indigo-600">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600">Beranda</a>
+                <a href="index.html#services" class="block py-2 text-gray-700 hover:text-indigo-600">Layanan</a>
+                <a href="index.html#about" class="block py-2 text-gray-700 hover:text-indigo-600">Tentang Kami</a>
+                <a href="index.html#portfolio" class="block py-2 text-gray-700 hover:text-indigo-600">Portfolio</a>
+                <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-indigo-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-[40vh] flex items-center justify-center text-white relative">
+        <div class="creative-element element-1"></div>
+        <div class="creative-element element-2"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Kebijakan Privasi</h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                PT KEEN EYE berkomitmen untuk melindungi privasi dan keamanan data pribadi Anda
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="content-section max-w-4xl mx-auto p-8 md:p-12">
+                <div class="mb-8">
+                    <p class="text-gray-600 text-sm">Terakhir diperbarui: 15 November 2023</p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- Pendahuluan -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">1. Pendahuluan</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Selamat datang di PT KEEN EYE. Kami sangat menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda berikan kepada kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi Anda ketika Anda menggunakan layanan kami, termasuk layanan Meta Ads dan solusi periklanan digital lainnya.
+                        </p>
+                    </div>
+
+                    <!-- Data yang Kami Kumpulkan -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">2. Data yang Kami Kumpulkan</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">2.1 Informasi Pribadi</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Kami dapat mengumpulkan informasi pribadi seperti nama, alamat email, nomor telepon, alamat perusahaan, dan informasi lain yang Anda berikan secara sukarela melalui formulir kontak, pendaftaran, atau komunikasi lainnya dengan kami.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">2.2 Informasi Bisnis</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Untuk layanan Meta Ads dan periklanan, kami dapat mengumpulkan informasi bisnis Anda termasuk nama perusahaan, industri, target audiens, anggaran iklan, dan data lain yang relevan untuk menyediakan layanan yang optimal.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">2.3 Data Penggunaan</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    Kami mengumpulkan data tentang bagaimana Anda menggunakan layanan kami, termasuk halaman yang dikunjungi, waktu yang dihabiskan, dan interaksi dengan konten kami untuk meningkatkan pengalaman pengguna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Penggunaan Data -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">3. Penggunaan Data</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Kami menggunakan data pribadi Anda untuk tujuan berikut:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Menyediakan dan mengelola layanan Meta Ads dan periklanan digital</li>
+                            <li>Memproses permintaan dan respons terhadap pertanyaan Anda</li>
+                            <li>Mengirimkan informasi tentang layanan dan promosi yang relevan</li>
+                            <li>Meningkatkan kualitas layanan dan pengalaman pengguna</li>
+                            <li>Analisis dan pelaporan performa kampanye iklan</li>
+                            <li>Mematuhi kewajiban hukum dan peraturan yang berlaku</li>
+                        </ul>
+                    </div>
+
+                    <!-- Berbagi Data -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">4. Berbagi Data</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Kami tidak menjual, menyewakan, atau membagikan data pribadi Anda kepada pihak ketiga tanpa persetujuan Anda, kecuali dalam kondisi berikut:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Untuk menyediakan layanan yang Anda minta (misalnya, dengan platform Meta)</li>
+                            <li>Dengan penyedia layanan tepercaya yang membantu operasional bisnis kami</li>
+                            <li>Untuk mematuhi hukum, peraturan, atau proses hukum</li>
+                            <li>Untuk melindungi hak, properti, atau keselamatan kami atau pihak lain</li>
+                        </ul>
+                    </div>
+
+                    <!-- Keamanan Data -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">5. Keamanan Data</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            PT KEEN EYE menerapkan langkah-langkah keamanan yang wajar dan sesuai untuk melindungi data pribadi Anda dari akses tidak sah, penggunaan yang salah, atau perubahan. Kami menggunakan enkripsi, firewall, dan teknologi keamanan lainnya untuk menjaga integritas data Anda.
+                        </p>
+                    </div>
+
+                    <!-- Hak Anda -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">6. Hak Anda</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Sebagai pemilik data, Anda memiliki hak untuk:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Mengakses data pribadi yang kami simpan tentang Anda</li>
+                            <li>Memperbaiki data yang tidak akurat atau tidak lengkap</li>
+                            <li>Menghapus data pribadi Anda (dalam kondisi tertentu)</li>
+                            <li>Menolak pemrosesan data untuk tujuan pemasaran</li>
+                            <li>Meminta pembatasan pemrosesan data</li>
+                            <li>Memindahkan data Anda ke layanan lain</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cookies -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">7. Kebijakan Cookies</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Kami menggunakan cookies untuk meningkatkan pengalaman pengguna dan menganalisis traffic website. Cookies adalah file teks kecil yang disimpan di browser Anda. Anda dapat mengatur browser untuk menolak cookies, namun ini dapat mempengaruhi fungsionalitas website.
+                        </p>
+                    </div>
+
+                    <!-- Perubahan Kebijakan -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">8. Perubahan Kebijakan Privasi</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            PT KEEN EYE dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan akan diinformasikan melalui website atau email Anda. Kami menyarankan Anda untuk secara berkala meninjau kebijakan ini untuk tetap mendapatkan informasi tentang bagaimana kami melindungi data Anda.
+                        </p>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4 text-gray-800">9. Hubungi Kami</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Jika Anda memiliki pertanyaan, keluhan, atau permintaan terkait Kebijakan Privasi ini, silakan hubungi kami:
+                        </p>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-gray-700">PT KEEN EYE</h4>
+                                <p class="text-gray-600">DUSUN KUTA, DESA KUTA, PUJUT, LOMBOK TENGAH, NUSA TENGGARA BARAT</p>
+                                <p class="text-gray-600">Desa/Kelurahan Kuta, Kec. Pujut, Kab. Lombok Tengah, Provinsi Nusa Tenggara Barat</p>
+                            </div>
+                            <div class="mb-4">
+                                <p class="text-gray-600"><strong>Email:</strong> privacy@ptkeeneye.com</p>
+                                <p class="text-gray-600"><strong>Telepon:</strong> 082382466172</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-lg">
+                        <p class="text-gray-700 italic">
+                            Dengan menggunakan layanan PT KEEN EYE, Anda menyatakan telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">PT KEEN EYE</h3>
+                    <p class="text-gray-400 mb-4">
+                        Solusi periklanan Meta yang kreatif dan efektif untuk industri perhotelan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Meta Ads Campaign</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Creative Content</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Performance Analytics</a></li>
+                        <li><a href="index.html#services" class="text-gray-400 hover:text-white transition">Social Media Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Perusahaan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="index.html#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Tim Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Karir</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition">Kebijakan Privasi</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kebijakan Cookie</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2023 PT KEEN EYE. Hak Cipta Dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
